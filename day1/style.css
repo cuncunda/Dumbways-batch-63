@@ -18,6 +18,11 @@ body {
   line-height: 1.5;
 }
 
+.container img {
+  display: block;
+  margin: 0 auto; /* otomatis center */
+}
+
 .intro {
   padding: 20px;
   border-radius: 10px;
