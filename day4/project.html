@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <title>My Project</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../../asset/logo uin.png"
+              alt="Logo"
+              width="30"
+              height="30"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">My Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact Me</a>
+              </li>
+            </ul>
+              <button class="btn btn-secondary" disabled type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- section my project -->
+      <section class="addmyProject">
+        <div class="container">
+            <div class="title">
+                <h2> Add My Project</h2>
+            </div>
+            <!-- form -->
+            <form>
+                <div class="mb-3">
+                    <label for="project-name" class="form-label">Project Name</label>
+                    <input type="text" class="form-control" id="project-name" placeholder="Input Project Name"/>
+                    <!-- date -->
+                    <div class="row g-3">
+                      <div class="col mb-3">
+                        <label for="start-date" class="form-label">Start Date</label>
+                        <input type="date" id="start-date" class="form-control" aria-label="Start Date">
+                      </div>
+                      <div class="col mb-3">
+                        <label for="end-date" class="form-label">End Date</label>
+                        <input type="date" id="end-date" class="form-control" aria-label="End Date">
+                      </div>
+                    </div>
+                    <!-- deskripsi -->
+                    <div class="col mb-3">
+                      <label for="description" class="form-label">Description</label>
+                      <input type="text" class="form-control" id="description" placeholder="Add Description"/>
+                    </div>
+                </div>
+            </form>
+            <!-- checkbox -->
+            <label for="tecnologies" class="form-label">Technologies</label>
+            <div class="col mb-3">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="nodeJs">
+                    <label class="form-check-label" for="nodeJs">Node JS</label>
+                </div> 
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="reactJs">
+                    <label class="form-check-label" for="reactJs">React JS</label>
+                </div>
+            </div> 
+            <div class="col mb-3">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="nextJs">
+                    <label class="form-check-label" for="nextJs">Next JS</label>
+                </div>
+    
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="typeScript">
+                    <label class="form-check-label" for="typeScript">typeScript</label>
+                </div>
+            </div>
+            <!-- upload -->
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile02">
+                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+            </div>
+            <!-- button submit -->
+            <div class="button">
+                <button type="button" class="btn btn-primary" onclick="addProject()">Submit</button>
+            </div>
+        </div>
+      </section>
+      <!-- my project -->
+      <section class="my-project">
+        <div class="project-section mt-5">
+            <h2 class="text-center mb-4">My Project</h2>
+            <div id="project-list" class="project-list row g-4">
+                <div class="col-md-3">
+                    <div class="card">
+                      <img src="../../asset/mac.jpg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Project Image">
+                      <div class="card-body">
+                        <h5 class="card-title">Project Title</h5>
+                        <p class="card-text">
+                          Short description of the project goes here.
+                        </p>
+                        <p class="text-muted mb-1">Duration: 12 Jan 2024 - 12 Feb 2024</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                          <div>
+                            <i class="bi bi-nodejs"></i>
+                            <i class="bi bi-react"></i>
+                            <i class="bi bi-github"></i>
+                          </div>
+                          <a href="#" class="btn btn-primary btn-sm">Detail</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </section>
+
+
+      <script src="script.js"></script>
+  </body>
+</html>
+
