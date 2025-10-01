@@ -1,0 +1,37 @@
+.navbar {
+  margin: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.bg-custom {
+  background-color: #e5e5e5;
+}
+
+.container {
+  background-color: #f5f5f5;
+  padding: 12px;
+  margin-top: 20px;
+  width: 60%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.container-title {
+  text-align: center;
+}
+
+.message {
+  height: 120px;
+}
+
+.btn {
+  background-color: #023047;
+}
+
+.btn-center {
+  display: block;
+  margin: 0 auto;
+  background-color: #023047;
+  width: 30%;
+}
