@@ -1,4 +1,4 @@
-// Data dumy semntara
+// Data dummy sementara
 let projects = [
   {
     name: "Cunda Web App",
