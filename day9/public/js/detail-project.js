@@ -1,14 +1,10 @@
-// Ambil data projects dari localStorage
 const projects = JSON.parse(localStorage.getItem("projects")) || [];
 
-// Ambil id dari URL, misal ?id=0
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
-// Ambil elemen container utama
 const container = document.querySelector(".container");
 
-// Cek apakah ada data projects
 if (projects.length === 0) {
   container.innerHTML =
     "<h2 class='text-center mt-5'>Project data tidak ditemukan. Silakan kembali ke My Project.</h2>";
@@ -19,7 +15,6 @@ if (projects.length === 0) {
     container.innerHTML =
       "<h2 class='text-center mt-5'>Project tidak ditemukan!</h2>";
   } else {
-    // Render detail project
     container.innerHTML = `
       <h1 class="mb-3">${project.name}</h1>
       <img src="${

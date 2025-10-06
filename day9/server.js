@@ -31,5 +31,5 @@ app.get("/detail-project", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`jalan yu janal http://localhost:${port}`);
+  console.log(`jalan yu jalan http://localhost:${port}`);
 });
