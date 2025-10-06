@@ -1,0 +1,132 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 50px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  line-height: 1.5;
+}
+
+.content {
+  flex: 2;
+}
+
+.intro {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 1 solid #e5e5e5;
+  background: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+.data-diri {
+  display: block;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 1 solid #e5e5e5;
+  background: #f5f5f5;
+}
+
+.sub-title {
+  text-align: center;
+  margin: 10px;
+}
+
+.cta-satu {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #14213d;
+  color: #e5e5e5;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-dua {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #14213d;
+  border: 2px solid #14213d;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cta {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* tombol di tengah horizontal */
+  gap: 15px;
+}
+
+.cta-satu:hover {
+  color: #14213d;
+  border: 2px solid #14213d;
+  background-color: #fca311;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.cta-dua:hover {
+  color: #14213d;
+  border: 2px solid #fca311;
+  /* background-color: #fca311; */
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  gap: 40px;
+}
+
+.content-dua {
+  flex: 1;
+}
+
+.card {
+  flex: 1;
+  max-width: 100%;
+  margin: 0 20px;
+  text-align: center;
+  padding: 12px;
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card .name {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 8px;
+}
+
+.card .position {
+  margin: 0 auto;
+  font-weight: bold;
+  font-style: oblique;
+}
