@@ -1,0 +1,74 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.navbar {
+  margin: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  /* background-color: #f8f9fa; */
+  padding: 8px;
+  /* margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  width: 100%; */
+  margin-bottom: 20px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); */
+  border-radius: 12px;
+}
+
+.title {
+  text-align: center;
+}
+
+.content-satu-a {
+  display: flex;
+}
+
+img {
+  width: 60%;
+}
+
+.keterangan-durasi {
+  margin-left: 80px;
+}
+
+.keterangan-teknologi {
+  margin-left: 80px;
+}
+
+.value {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.value-teknologi {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.react {
+  display: flex;
+}
+
+.js {
+  display: flex;
+}
+
+.node {
+  display: flex;
+}
+
+.deskripsi-konten {
+  margin-top: 24px;
+}
+
+.cta {
+  display: flex;
+  justify-content: end;
+}
